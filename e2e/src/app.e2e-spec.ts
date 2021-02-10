@@ -8,11 +8,9 @@ describe('workspace-project App', () => {
     page = new AppPage();
   });
 
-  it('should display welcome message', () => {
+  it('should load app', () => {
     page.navigateTo();
-    expect(page.getTitleText()).toEqual(
-      'poc-estudos-angular-gitpod app is running!'
-    );
+    expect(page).toBeDefined();
   });
 
   afterEach(async () => {
