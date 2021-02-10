@@ -1,6 +1,7 @@
 {
   "name": "poc-estudos-angular-gitpod",
-  "version": "0.0.0",
+  "version": "0.1.0",
+  "description": "Poc para estudos com Angular, rodando no gitpod",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -13,6 +14,20 @@
     "prettier-check": "npx prettier --check .",
     "pre-commit": "npm run lint && npm run test && npm run e2e"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martins86/poc-estudos-angular-gitpod.git"
+  },
+  "keywords": [],
+  "author": "Thiago Martins de Freitas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martins86/poc-estudos-angular-gitpod/issues"
+  },
+  "engines": {
+    "node": "^12.18.3"
+  },
+  "homepage": "https://martins86.github.io/poc-estudos-angular-gitpod/inicio",
   "private": true,
   "dependencies": {
     "@angular/animations": "~10.1.1",
