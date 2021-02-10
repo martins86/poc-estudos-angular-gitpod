@@ -1,8 +1,7 @@
 {
-  "/src/*": [
-    "prettier-write",
+  "*.{js,jsx,ts,tsx,md,html,scss,json}": [
+    "npm run prettier-write",
     "git add",
-    "prettier-check",
-    "pre-commit"
+    "npm run prettier-check"
   ]
 }
