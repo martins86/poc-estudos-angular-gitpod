@@ -1,0 +1,40 @@
+# List the ports you want to expose and what to do when they are served. See https://www.gitpod.io/docs/config-ports/
+ports:
+  - port: 9876
+    onOpen: open-preview
+  - port: 8000
+    onOpen: ignore
+  - port: 4200
+    onOpen: open-preview
+  - port: 3004
+    onOpen: ignore
+
+# List the start up tasks. You can start them in parallel in multiple terminals. See https://www.gitpod.io/docs/config-start-tasks/
+tasks:
+  - before: export NG_CLI_ANALYTICS=ci
+  - command: >
+      echo n | npm i -g @angular/cli &&
+      npm i -g jshint &&
+      npm i -g tslint &&
+      sleep 2 &&
+      echo n | npm i @angular/cli &&
+      npm install &&
+      sleep 6 &&
+      ng serve --host 0.0.0.0 --disableHostCheck
+
+# Github config
+github:
+  prebuilds:
+    master: true
+    branches: true
+    pullRequests: true
+    pullRequestsFromForks: true
+    addCheck: true
+    addComment: true
+    addBadge: false
+    addLabel: false
+
+# Command to add your extensions
+vscode:
+  extensions:
+    - esbenp.prettier-vscode@5.0.1:RwSu+IlJT2eB3vwdygaJUQ==
