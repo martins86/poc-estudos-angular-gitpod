@@ -1,0 +1,8 @@
+{
+  "/src/*": [
+    "prettier-write",
+    "git add",
+    "prettier-check",
+    "pre-commit"
+  ]
+}
