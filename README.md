@@ -40,6 +40,11 @@ Config: `npx mrm lint-staged` <br>
 
 <br>
 
+Angular Material / CDK - [Angular Material](https://material.angular.io/) :<br>
+`npm install @angular/material @angular/cdk --save`
+
+<br>
+
 # Criando um novo componente
 
 Modulo com rotas - (alterar pages/home por pasta/nome do novo modulo) :<br>
