@@ -10,7 +10,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "prettier-write": "npx prettier --write --ignore-unknown .",
-    "prettier-check": "npx prettier --check ."
+    "prettier-check": "npx prettier --check .",
+    "pre-commit": "npm run lint && npm run test && npm run e2e"
   },
   "private": true,
   "dependencies": {
