@@ -54,7 +54,8 @@
                   "maximumWarning": "6kb",
                   "maximumError": "10kb"
                 }
-              ]
+              ],
+              "baseHref": "https://martins86.github.io/poc-estudos-angular-gitpod/"
             }
           }
         },
@@ -102,7 +103,8 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "poc-estudos-angular-gitpod:serve"
+            "devServerTarget": "poc-estudos-angular-gitpod:serve",
+            "port": 4201
           },
           "configurations": {
             "production": {
