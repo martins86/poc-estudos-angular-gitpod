@@ -15,7 +15,7 @@
 <br>
 
 > Aplicação em Angular para estudos.<br>
-> GitHub Pages - [Aplicação](https://martins86.github.io/poc-estudos-angular-gitpod/inicio)
+> GitHub Pages - [Aplicação](https://martins86.github.io/poc-estudos-angular-gitpod/home)
 
 <br>
 
@@ -37,7 +37,6 @@ Pre Commit: `husky add .husky/pre-commit "npm run pre-commit"` <br>
 Lint Staged - CI - [lint-staged](https://github.com/okonet/lint-staged#readme) :<br>
 Pacote: `npm install lint-staged --save-dev` <br>
 Config: `npx mrm lint-staged` <br>
-
 
 <br>
 
@@ -79,16 +78,14 @@ Execute o comando `ng e2e` rodando com [Protractor](http://www.protractortest.or
 
 # Dependências em desenvolvimento
 
-| Package    | NPMJS                                      | Shields                                                                         |
-| ---------- | ------------------------------------------ | ------------------------------------------------------------------------------- |
-| Jasmine    | https://www.npmjs.com/package/jasmine-core | ![GitHub package.json dependency version (dev dep on branch)][jasmine-core-img] |
-| Karma      | https://www.npmjs.com/package/karmal       | ![GitHub package.json dependency version (dev dep on branch)][karma-img]        |
-| Protractor | https://www.npmjs.com/package/protractor   | ![GitHub package.json dependency version (dev dep on branch)][protractor-img]   |
-| Husky      | https://www.npmjs.com/package/husky        | ![GitHub package.json dependency version (dev dep on branch)][husky-img]        |
-| Lint Staged      | https://www.npmjs.com/package/lint-staged        | ![GitHub package.json dependency version (dev dep on branch)][lint-staged-img]        |
-| Prettier   | https://www.npmjs.com/package/prettier     | ![GitHub package.json dependency version (dev dep on branch)][prettier-img]     |
-
-
+| Package     | NPMJS                                      | Shields                                                                         |
+| ----------- | ------------------------------------------ | ------------------------------------------------------------------------------- |
+| Jasmine     | https://www.npmjs.com/package/jasmine-core | ![GitHub package.json dependency version (dev dep on branch)][jasmine-core-img] |
+| Karma       | https://www.npmjs.com/package/karmal       | ![GitHub package.json dependency version (dev dep on branch)][karma-img]        |
+| Protractor  | https://www.npmjs.com/package/protractor   | ![GitHub package.json dependency version (dev dep on branch)][protractor-img]   |
+| Husky       | https://www.npmjs.com/package/husky        | ![GitHub package.json dependency version (dev dep on branch)][husky-img]        |
+| Lint Staged | https://www.npmjs.com/package/lint-staged  | ![GitHub package.json dependency version (dev dep on branch)][lint-staged-img]  |
+| Prettier    | https://www.npmjs.com/package/prettier     | ![GitHub package.json dependency version (dev dep on branch)][prettier-img]     |
 
 <!-- Markdown link & images -->
 
