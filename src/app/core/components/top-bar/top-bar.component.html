@@ -8,25 +8,33 @@
       <ul>
         <li>
           <button mat-icon-button title="Acesso as configurações">
-            <mat-icon>settings</mat-icon>
+            <mat-icon aria-hidden="false" aria-label="Configurações"
+              >settings</mat-icon
+            >
           </button>
         </li>
         <li>
           <button mat-icon-button title="Saiba mais..">
-            <mat-icon>help_outline</mat-icon>
+            <mat-icon aria-hidden="false" aria-label="Saiba Mais"
+              >help_outline</mat-icon
+            >
           </button>
         </li>
         <li>
           <button mat-button [matMenuTriggerFor]="menu">
-            <mat-icon>person</mat-icon>
+            <mat-icon aria-hidden="false" aria-label="Perfil">person</mat-icon>
           </button>
           <mat-menu #menu="matMenu">
             <button mat-menu-item>
-              <mat-icon>launch</mat-icon>
+              <mat-icon aria-hidden="false" aria-label="Vistar Perfil"
+                >launch</mat-icon
+              >
               Perfil
             </button>
             <button mat-menu-item>
-              <mat-icon>exit_to_app</mat-icon>
+              <mat-icon aria-hidden="false" aria-label="Fazer logoff"
+                >exit_to_app</mat-icon
+              >
               Sair
             </button>
           </mat-menu>

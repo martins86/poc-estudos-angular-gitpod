@@ -8,6 +8,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { TopBarModule } from './core/components/top-bar/top-bar.module';
+import { BottomBarModule } from './core/components/bottom-bar/bottom-bar.module';
 import { HomeModule } from './pages/home/home.module';
 
 @NgModule({
@@ -18,6 +19,7 @@ import { HomeModule } from './pages/home/home.module';
     RouterModule,
     AppRoutingModule,
     TopBarModule,
+    BottomBarModule,
     HomeModule,
   ],
   providers: [],
