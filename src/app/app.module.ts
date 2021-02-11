@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 
+import { TopBarModule } from './core/components/top-bar/top-bar.module';
 import { HomeModule } from './pages/home/home.module';
 
 @NgModule({
@@ -16,6 +17,7 @@ import { HomeModule } from './pages/home/home.module';
     BrowserModule,
     RouterModule,
     AppRoutingModule,
+    TopBarModule,
     HomeModule,
   ],
   providers: [],
