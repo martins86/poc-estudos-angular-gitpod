@@ -1,1 +1,38 @@
-<p>top-bar works!</p>
+<header>
+  <mat-toolbar color="primary">
+    <input type="checkbox" id="menu" />
+    <label for="menu" class="icon">
+      <div class="menu"></div>
+    </label>
+    <nav class="flex-end">
+      <ul>
+        <li>
+          <button mat-icon-button title="Acesso as configurações">
+            <mat-icon>settings</mat-icon>
+          </button>
+        </li>
+        <li>
+          <button mat-icon-button title="Saiba mais..">
+            <mat-icon>help_outline</mat-icon>
+          </button>
+        </li>
+        <li>
+          <button mat-button [matMenuTriggerFor]="menu">
+            <mat-icon>person</mat-icon>
+          </button>
+          <mat-menu #menu="matMenu">
+            <button mat-menu-item>
+              <mat-icon>launch</mat-icon>
+              Perfil
+            </button>
+            <button mat-menu-item>
+              <mat-icon>exit_to_app</mat-icon>
+              Sair
+            </button>
+          </mat-menu>
+        </li>
+      </ul>
+    </nav>
+  </mat-toolbar>
+</header>
+<mat-divider></mat-divider>

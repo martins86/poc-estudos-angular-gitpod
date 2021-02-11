@@ -12,6 +12,9 @@ exports.config = {
   specs: ["./src/**/*.e2e-spec.ts"],
   capabilities: {
     browserName: "chrome",
+    chromeOptions: {
+      args: ["disable-infobars"],
+    },
   },
   directConnect: true,
   baseUrl: "http://localhost:4201/",
@@ -32,5 +35,11 @@ exports.config = {
         },
       })
     );
+    let globals = require("protractor");
+    let browser = globals.browser;
+    browser.waitForAngularEnabled();
+    browser.manage().window().maximize();
+    browser.manage().timeouts().implicitlyWait(5000);
   },
+  noGlobals: true,
 };

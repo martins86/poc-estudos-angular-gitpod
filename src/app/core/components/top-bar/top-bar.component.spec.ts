@@ -1,5 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { TopBarModule } from './top-bar.module';
+
 import { TopBarComponent } from './top-bar.component';
 
 describe('TopBarComponent', () => {
@@ -8,6 +10,7 @@ describe('TopBarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [TopBarModule],
       declarations: [TopBarComponent],
     }).compileComponents();
   });
