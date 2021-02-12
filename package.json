@@ -12,7 +12,8 @@
     "e2e": "ng e2e --port 4201",
     "prettier-write": "npx prettier --write --ignore-unknown .",
     "prettier-check": "npx prettier --check .",
-    "pre-commit": "npm run lint && npm run test && npm run e2e"
+    "pre-commit": "npm run lint && npm run test && npm run e2e",
+    "postinstall": "husky install"
   },
   "repository": {
     "type": "git",
@@ -20,9 +21,12 @@
   },
   "keywords": [],
   "author": "Thiago Martins de Freitas",
+  "email": "martins86@gmail.com",
+  "url": "https://www.linkedin.com/in/tmfreitas/",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/martins86/poc-estudos-angular-gitpod/issues"
+    "url": "https://github.com/martins86/poc-estudos-angular-gitpod/issues",
+    "email": "martins86@gmail.com"
   },
   "engines": {
     "node": "^12.18.3"
