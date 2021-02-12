@@ -47,29 +47,36 @@ Angular Material / CDK - [Angular Material](https://material.angular.io/) :<br>
 
 # Criando um novo componente
 
-Modulo com rotas - (alterar pages/home por pasta/nome do novo modulo) :<br>
-`ng generate module pages/home --routing`
-
-Componente - (alterar pages/home por folder/name do novo componente) :<br>
-`ng generate component pages/home`
-
-<br>
-
-# Subindo o servidor (Local)
-
-Execute o comando `ng serve -o` (Sobe o servidor e abre uma janela ou aba do navegador).
+### Módulo com rotas - (alterar pages/home por pasta/nome do novo modulo) :<br>
+`ng generate module pages/home --routing`<br>
+> home.module.ts<br>
+> home-routing.module.ts
 
 <br>
 
-# Rodando os testes unitários
-
-Execute o comando `ng test` rodando com [Karma](https://karma-runner.github.io).
+### Componente/Página - (alterar pages/home por folder/name do novo componente) :<br>
+`ng generate component pages/home`<br>
+> home.component.html<br>
+> home.component.scss<br>
+> home.component.spec.ts<br>
+> home.component.ts
 
 <br>
 
-# Rodando os testes end-to-end
+<br>
 
-Execute o comando `ng e2e` rodando com [Protractor](http://www.protractortest.org/).
+
+# Outros comandos personalizados
+
+| Alias     | Descrição                                      | Comando                                                                         |
+| ----------- | ------------------------------------------ | ------------------------------------------------------------------------------- |
+| npm run test    | Rodando testes unitários no CI/CD. | ng test --no-watch --no-progress --code-coverage --browsers ChromeHeadless |
+| npm run test-dev    | Rodando testes unitários em desenvolvimento. | ng test --code-coverage --progress |
+| npm run lint    | Rodando ts lint (análise de código). | ng lint |
+| npm run e2e    | Rodando testes end-to-end (e2e). | ng e2e --port 4201 |
+| prettier-write    | Checa, Organiza e Otimiza (formatado) o código. | npx prettier --write --ignore-unknown . |
+| prettier-check    | Checa se o código esta formatado. | npx prettier --check . |
+| npm run pre-commit    | Rodando ts lint, testes unitários e testes e2e. | npm run lint && npm run test && npm run e2e |
 
 <br>
 
