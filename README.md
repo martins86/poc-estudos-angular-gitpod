@@ -47,15 +47,19 @@ Angular Material / CDK - [Angular Material](https://material.angular.io/) :<br>
 
 # Criando um novo componente
 
-### Módulo com rotas - (alterar pages/home por pasta/nome do novo modulo) :<br>
+### Módulo com rotas - (alterar pages/home por tipo/nome do novo módulo) :<br>
+
 `ng generate module pages/home --routing`<br>
+
 > home.module.ts<br>
 > home-routing.module.ts
 
 <br>
 
-### Componente/Página - (alterar pages/home por folder/name do novo componente) :<br>
+### Componente/Página - (alterar pages/home por tipo/nome do novo componente) :<br>
+
 `ng generate component pages/home`<br>
+
 > home.component.html<br>
 > home.component.scss<br>
 > home.component.spec.ts<br>
@@ -65,18 +69,17 @@ Angular Material / CDK - [Angular Material](https://material.angular.io/) :<br>
 
 <br>
 
-
 # Outros comandos personalizados
 
-| Alias     | Descrição                                      | Comando                                                                         |
-| ----------- | ------------------------------------------ | ------------------------------------------------------------------------------- |
-| npm run test    | Rodando testes unitários no CI/CD. | ng test --no-watch --no-progress --code-coverage --browsers ChromeHeadless |
-| npm run test-dev    | Rodando testes unitários em desenvolvimento. | ng test --code-coverage --progress |
-| npm run lint    | Rodando ts lint (análise de código). | ng lint |
-| npm run e2e    | Rodando testes end-to-end (e2e). | ng e2e --port 4201 |
-| prettier-write    | Checa, Organiza e Otimiza (formatado) o código. | npx prettier --write --ignore-unknown . |
-| prettier-check    | Checa se o código esta formatado. | npx prettier --check . |
-| npm run pre-commit    | Rodando ts lint, testes unitários e testes e2e. | npm run lint && npm run test && npm run e2e |
+| Alias                  | Descrição                                       | Comando                                                                    |
+| ---------------------- | ----------------------------------------------- | -------------------------------------------------------------------------- |
+| npm run test           | Rodando testes unitários no CI/CD.              | ng test --no-watch --no-progress --code-coverage --browsers ChromeHeadless |
+| npm run test-dev       | Rodando testes unitários em desenvolvimento.    | ng test --code-coverage --progress                                         |
+| npm run lint           | Rodando ts lint (análise de código).            | ng lint                                                                    |
+| npm run e2e            | Rodando testes end-to-end (e2e).                | ng e2e --port 4201                                                         |
+| npm run prettier-write | Checa, Organiza e Otimiza (formatado) o código. | npx prettier --write --ignore-unknown .                                    |
+| npm run prettier-check | Checa se o código esta formatado.               | npx prettier --check .                                                     |
+| npm run pre-commit     | Rodando ts lint, testes unitários e testes e2e. | npm run lint && npm run test && npm run e2e                                |
 
 <br>
 
