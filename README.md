@@ -14,7 +14,7 @@
 
 <br>
 
-> Aplicação em Angular para estudos.<br>
+> Aplicação em Angular para estudos, CI/CD Travis com Deploy gh-pages<br>
 > GitHub Pages - [Aplicação](https://martins86.github.io/poc-estudos-angular-gitpod/home)
 
 <br>
@@ -42,6 +42,12 @@ Config: `npx mrm lint-staged` <br>
 
 Angular Material / CDK - [Angular Material](https://material.angular.io/) :<br>
 `npm install @angular/material @angular/cdk --save`
+
+<br>
+
+Lite Server - [Lite Server](https://github.com/johnpapa/lite-server) :<br>
+Global: `npm install -global lite-server@latest` <br>
+Dev: `npm install lite-server --save-dev` <br>
 
 <br>
 
@@ -91,6 +97,7 @@ Execute o comando `ng e2e` rodando com [Protractor](http://www.protractortest.or
 | Husky       | https://www.npmjs.com/package/husky        | ![GitHub package.json dependency version (dev dep on branch)][husky-img]        |
 | Lint Staged | https://www.npmjs.com/package/lint-staged  | ![GitHub package.json dependency version (dev dep on branch)][lint-staged-img]  |
 | Prettier    | https://www.npmjs.com/package/prettier     | ![GitHub package.json dependency version (dev dep on branch)][prettier-img]     |
+| Lite Server | https://www.npmjs.com/package/lite-server  | ![GitHub package.json dependency version (dev dep on branch)][lite-server]      |
 
 <!-- Markdown link & images -->
 
@@ -113,3 +120,4 @@ Execute o comando `ng e2e` rodando com [Protractor](http://www.protractortest.or
 [husky-img]: https://img.shields.io/github/package-json/dependency-version/martins86/poc-estudos-angular-gitpod/dev/husky
 [lint-staged-img]: https://img.shields.io/github/package-json/dependency-version/martins86/poc-estudos-angular-gitpod/dev/lint-staged
 [prettier-img]: https://img.shields.io/github/package-json/dependency-version/martins86/poc-estudos-angular-gitpod/dev/prettier
+[lite-server-img]: https://img.shields.io/github/package-json/dependency-version/martins86/poc-estudos-angular-gitpod/dev/lite-server
