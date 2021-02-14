@@ -27,7 +27,7 @@ install:
 
 script:
   - npm run test
-  - ng build --prod
+  - ng build --prod --base-href /poc-estudos-angular-gitpod/
   - cd dist/poc-estudos-angular-gitpod
   - cp index.html 404.html
 
