@@ -107,7 +107,7 @@ Dev: `npm install lite-server --save-dev` <br>
 | Husky       | https://www.npmjs.com/package/husky        | ![GitHub package.json dependency version (dev dep on branch)][husky-img]        |
 | Lint Staged | https://www.npmjs.com/package/lint-staged  | ![GitHub package.json dependency version (dev dep on branch)][lint-staged-img]  |
 | Prettier    | https://www.npmjs.com/package/prettier     | ![GitHub package.json dependency version (dev dep on branch)][prettier-img]     |
-| Lite Server | https://www.npmjs.com/package/lite-server  | ![GitHub package.json dependency version (dev dep on branch)][lite-server]      |
+| Lite Server | https://www.npmjs.com/package/lite-server  | ![GitHub package.json dependency version (dev dep on branch)][lite-server-img]      |
 
 <!-- Markdown link & images -->
 
