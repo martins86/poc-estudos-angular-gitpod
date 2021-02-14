@@ -5,6 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start-prod": "npm run build-local && lite-server",
     "build": "ng build",
     "build-local": "ng build --prod --aot --deploy-url ./ --base-href ./",
     "test": "ng test --no-watch --no-progress --code-coverage --browsers ChromeHeadless",

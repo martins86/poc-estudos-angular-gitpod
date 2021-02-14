@@ -77,15 +77,16 @@ Dev: `npm install lite-server --save-dev` <br>
 
 # Outros comandos personalizados
 
-| Alias                  | Descrição                                       | Comando                                                                    |
-| ---------------------- | ----------------------------------------------- | -------------------------------------------------------------------------- |
-| npm run test           | Rodando testes unitários no CI/CD.              | ng test --no-watch --no-progress --code-coverage --browsers ChromeHeadless |
-| npm run test-dev       | Rodando testes unitários em desenvolvimento.    | ng test --code-coverage --progress                                         |
-| npm run lint           | Rodando ts lint (análise de código).            | ng lint                                                                    |
-| npm run e2e            | Rodando testes end-to-end (e2e).                | ng e2e --port 4201                                                         |
-| npm run prettier-write | Checa, Organiza e Otimiza (formatado) o código. | npx prettier --write --ignore-unknown .                                    |
-| npm run prettier-check | Checa se o código esta formatado.               | npx prettier --check .                                                     |
-| npm run pre-commit     | Rodando ts lint, testes unitários e testes e2e. | npm run lint && npm run test && npm run e2e                                |
+| Alias                  | Descrição                                                         | Comando                                                                    |
+| ---------------------- | ----------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| npm run test           | Rodando testes unitários no CI/CD.                                | ng test --no-watch --no-progress --code-coverage --browsers ChromeHeadless |
+| npm run test-dev       | Rodando testes unitários em desenvolvimento.                      | ng test --code-coverage --progress                                         |
+| npm run lint           | Rodando ts lint (análise de código).                              | ng lint                                                                    |
+| npm run e2e            | Rodando testes end-to-end (e2e).                                  | ng e2e --port 4201                                                         |
+| npm run prettier-write | Checa, Organiza e Otimiza (formatado) o código.                   | npx prettier --write --ignore-unknown .                                    |
+| npm run prettier-check | Checa se o código esta formatado.                                 | npx prettier --check .                                                     |
+| npm run pre-commit     | Rodando ts lint, testes unitários e testes e2e.                   | npm run lint && npm run test && npm run e2e                                |
+| npm run start-prod     | Executa um build de prod e roda o resultado em um servidor local. | npm run build-local && lite-server                                         |
 
 <br>
 
@@ -107,7 +108,7 @@ Dev: `npm install lite-server --save-dev` <br>
 | Husky       | https://www.npmjs.com/package/husky        | ![GitHub package.json dependency version (dev dep on branch)][husky-img]        |
 | Lint Staged | https://www.npmjs.com/package/lint-staged  | ![GitHub package.json dependency version (dev dep on branch)][lint-staged-img]  |
 | Prettier    | https://www.npmjs.com/package/prettier     | ![GitHub package.json dependency version (dev dep on branch)][prettier-img]     |
-| Lite Server | https://www.npmjs.com/package/lite-server  | ![GitHub package.json dependency version (dev dep on branch)][lite-server-img]      |
+| Lite Server | https://www.npmjs.com/package/lite-server  | ![GitHub package.json dependency version (dev dep on branch)][lite-server-img]  |
 
 <!-- Markdown link & images -->
 
