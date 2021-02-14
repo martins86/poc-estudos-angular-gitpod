@@ -4,37 +4,29 @@
     <label for="menu" class="icon">
       <div class="menu"></div>
     </label>
-    <nav class="flex-end">
+    <nav class="menu-right">
       <ul>
         <li>
           <button mat-icon-button title="Acesso as configurações">
-            <mat-icon aria-hidden="false" aria-label="Configurações"
-              >settings</mat-icon
-            >
+            <mat-icon svgIcon="settings">Configurações</mat-icon>
           </button>
         </li>
         <li>
           <button mat-icon-button title="Saiba mais..">
-            <mat-icon aria-hidden="false" aria-label="Saiba Mais"
-              >help_outline</mat-icon
-            >
+            <mat-icon svgIcon="help_outline">Saiba Mais</mat-icon>
           </button>
         </li>
         <li>
           <button mat-button [matMenuTriggerFor]="menu">
-            <mat-icon aria-hidden="false" aria-label="Perfil">person</mat-icon>
+            <mat-icon svgIcon="person">Perfil</mat-icon>
           </button>
           <mat-menu #menu="matMenu">
             <button mat-menu-item>
-              <mat-icon aria-hidden="false" aria-label="Vistar Perfil"
-                >launch</mat-icon
-              >
-              Perfil
+              <mat-icon svgIcon="manage_accounts"></mat-icon>
+              Editar Perfil
             </button>
             <button mat-menu-item>
-              <mat-icon aria-hidden="false" aria-label="Fazer logoff"
-                >exit_to_app</mat-icon
-              >
+              <mat-icon svgIcon="exit_to_app"></mat-icon>
               Sair
             </button>
           </mat-menu>

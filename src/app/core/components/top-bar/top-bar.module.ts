@@ -1,4 +1,5 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
 
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -19,7 +20,7 @@ const materialModules = [
 
 @NgModule({
   declarations: [TopBarComponent],
-  imports: [CommonModule, materialModules],
+  imports: [CommonModule, HttpClientModule, materialModules],
   exports: [TopBarComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
