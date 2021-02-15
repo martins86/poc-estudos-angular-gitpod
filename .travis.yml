@@ -30,7 +30,6 @@ script:
   - ng build --prod --aot --deploy-url https://martins86.github.io/poc-estudos-angular-gitpod/ --base-href https://martins86.github.io/poc-estudos-angular-gitpod/
   - cd dist/poc-estudos-angular-gitpod
   - cp index.html 404.html
-  - cp assets/icons/svg/settings.svg
 
 notifications:
   email:
