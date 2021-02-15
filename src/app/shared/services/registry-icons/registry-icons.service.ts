@@ -17,7 +17,7 @@ export class RegistryIconsService {
       this.matIconRegistry.addSvgIcon(
         iconName,
         this.domSanitizer.bypassSecurityTrustResourceUrl(
-          './../../../assets/icons/svg/' + iconName + '.svg'
+          './assets/icons/svg/' + iconName + '.svg'
         )
       );
     });
