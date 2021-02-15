@@ -1,8 +1,8 @@
 <app-top-bar></app-top-bar>
 
-<mat-drawer-container>
-  <mat-drawer mode="side">
-    <app-left-bar></app-left-bar>
+<mat-drawer-container [hasBackdrop]="false">
+  <mat-drawer mode="over" [opened]="leftBarOpen">
+    <app-left-bar (closeLeftBarForMe)="closeLeftBar()"></app-left-bar>
   </mat-drawer>
 
   <mat-drawer-content>
