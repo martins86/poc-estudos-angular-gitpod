@@ -55,7 +55,7 @@
                   "maximumError": "10kb"
                 }
               ],
-              "baseHref": "./"
+              "baseHref": "/poc-estudos-angular-gitpod/"
             }
           }
         },
