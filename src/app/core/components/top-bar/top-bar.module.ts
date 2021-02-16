@@ -20,7 +20,7 @@ const materialModules = [
 
 @NgModule({
   declarations: [TopBarComponent],
-  imports: [CommonModule, HttpClientModule, materialModules],
+  imports: [CommonModule, HttpClientModule, ...materialModules],
   exports: [TopBarComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
