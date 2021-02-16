@@ -17,8 +17,9 @@ export class TopBarComponent {
       'settings',
       'help_outline',
       'person',
+      'login',
       'manage_accounts',
-      'exit_to_app',
+      'logout',
     ];
     this.iconRegistryService.registryIcons(iconsNames);
   }
