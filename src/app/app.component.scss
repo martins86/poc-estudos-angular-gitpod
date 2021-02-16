@@ -1,12 +1,18 @@
+@import "./../assets/styles/default.style.scss";
+
 :host {
   display: flex;
   flex-direction: column;
   height: 100%;
+
+  .mat-drawer:not(.mat-drawer-side) {
+    box-shadow: -11px 0px 17px 7px #9c27b0e8, 14px 0px 20px 1px #9c27b038, 0px 6px 30px 5px rgb(243 243 243 / 12%);
+  }
 }
 
 mat-drawer {
   width: 300px;
-  background-color: #ffffff;
+  background-color: $bg-color-secondary;
 }
 
 mat-drawer-container {
