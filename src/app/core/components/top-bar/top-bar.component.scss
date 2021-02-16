@@ -1,3 +1,9 @@
+@import "./../../../../assets/styles/default.style.scss";
+
+mat-toolbar {
+  background-color: $bg-color-tertiary;
+}
+
 .menu-right {
   flex: 1 1 0%;
   box-sizing: border-box;
@@ -22,7 +28,6 @@ input#menu {
 
 label.icon {
   position: fixed;
-  z-index: 200;
 }
 
 .icon .menu,

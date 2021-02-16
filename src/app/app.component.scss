@@ -1,0 +1,23 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+mat-drawer {
+  width: 300px;
+  background-color: #ffffff;
+}
+
+mat-drawer-container {
+  background-color: transparent;
+  background-image: url("./../assets/images/logo-angular-banner.svg");
+  background-position: 98% 98%;
+  background-repeat: no-repeat;
+  background-size: 150px;
+  height: 100%;
+}
+
+mat-drawer-content {
+  padding: 20px;
+}
