@@ -21,7 +21,23 @@ describe('TopBarComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create TopBarComponent', () => {
     expect(component).toBeTruthy();
+  });
+
+  describe('Testing toggleLeftBar', () => {
+    it('should emit toggleLeftBarForMe', () => {
+      // Arrange
+      spyOn(component.toggleLeftBarForMe, 'emit');
+
+      // Act
+      component.toggleLeftBar();
+
+      // Assert
+      expect(component.toggleLeftBarForMe.emit).toHaveBeenCalled();
+      expect(component.toggleLeftBarForMe.emit).toHaveBeenCalledWith(
+        'toggleLeftBar'
+      );
+    });
   });
 });

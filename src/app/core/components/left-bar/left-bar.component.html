@@ -1,5 +1,53 @@
-<mat-nav-list>
-  <h2 matSubheader>Páginas</h2>
+<div class="profile-card">
+  <div class="header">
+    <mat-icon svgIcon="account_circle"></mat-icon>
+    <h2>Controle de Ativos</h2>
+  </div>
+</div>
 
-  <mat-divider></mat-divider>
+<mat-nav-list>
+  <mat-list>
+    <mat-divider></mat-divider>
+    <div class="nav-pages">
+      <div mat-subheader>Páginas</div>
+      <mat-divider></mat-divider>
+      <a [routerLink]="['/']" (click)="closeLeftBar()">
+        <mat-list-item routerLinkActive="active">
+          <mat-icon mat-list-icon svgIcon="home"></mat-icon>
+          <div mat-line>Inicial</div>
+        </mat-list-item>
+      </a>
+      <mat-divider></mat-divider>
+    </div>
+
+    <div class="nav-user">
+      <mat-divider></mat-divider>
+      <div mat-subheader>Usuário</div>
+      <mat-divider></mat-divider>
+      <a [routerLink]="['/login']" (click)="closeLeftBar()">
+        <mat-list-item routerLinkActive="active">
+          <mat-icon mat-list-icon svgIcon="login"></mat-icon>
+          <div mat-line>Entrar</div>
+        </mat-list-item>
+      </a>
+      <mat-divider></mat-divider>
+
+      <ng-template *ngIf="authValid">
+        <a [routerLink]="['/profile']" (click)="closeLeftBar()">
+          <mat-list-item routerLinkActive="active">
+            <mat-icon mat-list-icon svgIcon="manage_accounts"></mat-icon>
+            <div mat-line>Editar Perfil</div>
+          </mat-list-item>
+        </a>
+        <mat-divider></mat-divider>
+        <a [routerLink]="['/login']" (click)="closeLeftBar()">
+          <mat-list-item routerLinkActive="active">
+            <mat-icon mat-list-icon svgIcon="logout"></mat-icon>
+            <div mat-line>Sair</div>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+        </a>
+      </ng-template>
+    </div>
+  </mat-list>
 </mat-nav-list>

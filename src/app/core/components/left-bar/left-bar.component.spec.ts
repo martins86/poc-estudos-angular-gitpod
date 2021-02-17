@@ -1,4 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 
 import { LeftBarModule } from './left-bar.module';
 
@@ -10,7 +11,7 @@ describe('LeftBarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [LeftBarModule],
+      imports: [RouterTestingModule, LeftBarModule],
       declarations: [LeftBarComponent],
     }).compileComponents();
   });
@@ -21,7 +22,28 @@ describe('LeftBarComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create LeftBarComponent', () => {
     expect(component).toBeTruthy();
+  });
+
+  describe('Testing closeLeftBar', () => {
+    it('should emit closeLeftBarForMe', () => {
+      // Arrange
+      const elementMock = document.createElement('input');
+      elementMock.id = 'menu-checked';
+      elementMock.checked = true;
+
+      spyOn(document, 'getElementById').and.returnValue(elementMock);
+      spyOn(component.closeLeftBarForMe, 'emit');
+
+      // Act
+      component.closeLeftBar();
+
+      // Assert
+      expect(component.closeLeftBarForMe.emit).toHaveBeenCalled();
+      expect(component.closeLeftBarForMe.emit).toHaveBeenCalledWith(
+        'closeLeftBar'
+      );
+    });
   });
 });

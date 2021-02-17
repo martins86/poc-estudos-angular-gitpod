@@ -1,38 +1,48 @@
 <header>
   <mat-toolbar>
-    <input type="checkbox" id="menu" />
-    <label for="menu" class="icon">
-      <div class="menu"></div>
-    </label>
-    <nav class="menu-right">
+    <div class="menu-left">
+      <input type="checkbox" id="menu-checked" />
+      <label for="menu-checked" class="icon" (click)="toggleLeftBar()">
+        <div class="menu"></div>
+      </label>
+    </div>
+
+    <div class="menu-right">
       <ul>
         <li>
           <button mat-icon-button title="Acesso as configurações">
-            <mat-icon svgIcon="settings">Configurações</mat-icon>
+            <mat-icon svgIcon="settings"></mat-icon>
           </button>
         </li>
         <li>
           <button mat-icon-button title="Saiba mais..">
-            <mat-icon svgIcon="help_outline">Saiba Mais</mat-icon>
+            <mat-icon svgIcon="help_outline"></mat-icon>
           </button>
         </li>
         <li>
           <button mat-button [matMenuTriggerFor]="menu">
-            <mat-icon svgIcon="person">Perfil</mat-icon>
+            <mat-icon svgIcon="person"></mat-icon>
           </button>
           <mat-menu #menu="matMenu">
             <button mat-menu-item>
-              <mat-icon svgIcon="manage_accounts"></mat-icon>
-              Editar Perfil
+              <mat-icon svgIcon="login"></mat-icon>
+              Entrar
             </button>
-            <button mat-menu-item>
-              <mat-icon svgIcon="exit_to_app"></mat-icon>
-              Sair
-            </button>
+
+            <ng-template *ngIf="authValid">
+              <button mat-menu-item>
+                <mat-icon svgIcon="manage_accounts"></mat-icon>
+                Editar Perfil
+              </button>
+              <button mat-menu-item>
+                <mat-icon svgIcon="logout"></mat-icon>
+                Sair
+              </button>
+            </ng-template>
           </mat-menu>
         </li>
       </ul>
-    </nav>
+    </div>
   </mat-toolbar>
 </header>
 <mat-divider></mat-divider>

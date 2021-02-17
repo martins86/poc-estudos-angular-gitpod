@@ -1,0 +1,38 @@
+@import "./../../../../assets/styles/default.style.scss";
+
+.profile-card {
+  text-align: center;
+  padding: 15px 10px 0;
+
+  .header {
+    .mat-icon {
+      height: 70px;
+      width: 70px;
+    }
+  }
+}
+
+mat-nav-list {
+  h2 {
+    color: $font-color-secondary;
+    margin: 6px 0 0 9px;
+  }
+
+  .mat-list-base .mat-subheader {
+    background-color: $bg-color-primary;
+  }
+
+  .mat-list-icon {
+    color: rgba(0, 0, 0, 0.54);
+  }
+
+  .active {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-pages {
+    padding-bottom: 10%;
+    height: auto;
+    min-height: 150px;
+  }
+}
