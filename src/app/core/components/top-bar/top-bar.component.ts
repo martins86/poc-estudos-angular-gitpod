@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 
 import { RegistryIconsService } from './../../../shared/services/registry-icons/registry-icons.service';
 
@@ -8,8 +8,17 @@ import { RegistryIconsService } from './../../../shared/services/registry-icons/
   styleUrls: ['./top-bar.component.scss'],
 })
 export class TopBarComponent {
+  @Output()
+  toggleLeftBarForMe: EventEmitter<string> = new EventEmitter();
+
+  authValid = false;
+
   constructor(protected iconRegistryService: RegistryIconsService) {
     this.registeringIcons();
+  }
+
+  toggleLeftBar(): void {
+    this.toggleLeftBarForMe.emit('toggleLeftBar');
   }
 
   private registeringIcons(): void {
