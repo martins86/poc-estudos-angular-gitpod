@@ -1,1 +1,53 @@
 @import "./../../../assets/styles/default.style.scss";
+
+:host {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-flow: wrap;
+  height: 100%;
+}
+
+.login {
+  mat-card {
+    width: 354px;
+    padding: 10px;
+    margin: 0 10px;
+    background-color: $dark-grayish-navy;
+    box-shadow: 4px 5px 3px 1px $suva-grey;
+  }
+
+  mat-card-title {
+    margin: 12px 0 26px 0;
+  }
+
+  mat-form-field {
+    display: block;
+
+    mat-label.label-text {
+      color: $white;
+    }
+    .mat-input-element {
+      caret-color: $white;
+    }
+  }
+
+  mat-card-actions {
+    padding: 0;
+  }
+
+  mat-form-field,
+  mat-card-actions {
+    margin: 6px 16px;
+  }
+
+  .mat-card > .mat-card-actions:last-child {
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .mat-raised-button {
+    background-color: $vivid-violet;
+  }
+}

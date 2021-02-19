@@ -1,12 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
+
+import { RegistryIconsService } from './../../shared/services/registry-icons/registry-icons.service';
 
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
   styleUrls: ['./login.component.scss'],
 })
-export class LoginComponent implements OnInit {
-  constructor() {}
+export class LoginComponent {
+  constructor(protected iconRegistryService: RegistryIconsService) {
+    this.registeringIcons();
+  }
 
-  ngOnInit(): void {}
+  private registeringIcons(): void {
+    const iconsNames: string[] = ['alternate_email', 'lock'];
+    this.iconRegistryService.registryIcons(iconsNames);
+  }
 }
