@@ -14,20 +14,16 @@
 
 mat-nav-list {
   h2 {
-    color: $font-color-secondary;
+    color: $hoki;
     margin: 6px 0 0 9px;
   }
 
   .mat-list-base .mat-subheader {
-    background-color: $bg-color-primary;
-  }
-
-  .mat-list-icon {
-    color: rgba(0, 0, 0, 0.54);
+    background-color: $black-russian;
   }
 
   .active {
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: $black-russian-light;
   }
 
   .nav-pages {
