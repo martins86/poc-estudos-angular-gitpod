@@ -20,8 +20,9 @@ import { LoadingSpinnerModule } from './shared/components/loading-spinner/loadin
 const sharedModules = [LoadingSpinnerModule];
 
 import { HomeModule } from './pages/home/home.module';
+import { LoginModule } from './pages/login/login.module';
 
-const pagesModules = [HomeModule];
+const pagesModules = [HomeModule, LoginModule];
 
 @NgModule({
   declarations: [AppComponent],
