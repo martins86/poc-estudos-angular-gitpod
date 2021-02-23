@@ -13,7 +13,7 @@ export class LoginComponent {
   }
 
   private registeringIcons(): void {
-    const iconsNames: string[] = ['alternate_email', 'lock'];
+    const iconsNames: string[] = ['alternate_email', 'lock', 'google-plus-g'];
     this.iconRegistryService.registryIcons(iconsNames);
   }
 }
