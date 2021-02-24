@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "estudos-angular-323ef": {
+      "hosting": {
+        "poc-estudos-angular-gitpod": [
+          "estudos-angular-323ef"
+        ]
+      }
+    }
+  }
+}
