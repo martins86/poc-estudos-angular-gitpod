@@ -21,8 +21,9 @@ const sharedModules = [LoadingSpinnerModule];
 
 import { HomeModule } from './pages/home/home.module';
 import { LoginModule } from './pages/login/login.module';
+import { ProfileModule } from './pages/profile/profile.module';
 
-const pagesModules = [HomeModule, LoginModule];
+const pagesModules = [HomeModule, LoginModule, ProfileModule];
 
 @NgModule({
   declarations: [AppComponent],
