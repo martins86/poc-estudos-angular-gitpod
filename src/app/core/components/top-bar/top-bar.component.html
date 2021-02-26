@@ -28,17 +28,14 @@
               <mat-icon svgIcon="login"></mat-icon>
               Entrar
             </button>
-
-            <ng-template *ngIf="authValid">
-              <button mat-menu-item>
-                <mat-icon svgIcon="manage_accounts"></mat-icon>
-                Editar Perfil
-              </button>
-              <button mat-menu-item>
-                <mat-icon svgIcon="logout"></mat-icon>
-                Sair
-              </button>
-            </ng-template>
+            <button mat-menu-item [routerLink]="['/profile']">
+              <mat-icon svgIcon="manage_accounts"></mat-icon>
+              Editar Perfil
+            </button>
+            <button mat-menu-item>
+              <mat-icon svgIcon="logout"></mat-icon>
+              Sair
+            </button>
           </mat-menu>
         </li>
       </ul>
