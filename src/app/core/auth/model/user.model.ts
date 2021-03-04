@@ -2,8 +2,7 @@ export class Roles {
   constructor(
     public subscriber?: boolean,
     public editor?: boolean,
-    public admin?: boolean,
-
+    public admin?: boolean
   ) {}
 }
 
