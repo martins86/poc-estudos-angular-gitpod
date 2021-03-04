@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 
+import { AuthAngularFireModule } from './../../auth/auth-angular-fire.module';
+
 import { TopBarModule } from './top-bar.module';
 
 import { TopBarComponent } from './top-bar.component';
@@ -11,7 +13,7 @@ describe('TopBarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterTestingModule, TopBarModule],
+      imports: [RouterTestingModule, TopBarModule, AuthAngularFireModule],
       declarations: [TopBarComponent],
     }).compileComponents();
   });
