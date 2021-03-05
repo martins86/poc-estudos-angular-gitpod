@@ -11,7 +11,6 @@
 [![code style: prettier][prettier-style-img]][prettier-style-url]
 [![GitHub license][license-img]][license-url]
 ![GitHub last commit][commit-img]
-
 <br>
 
 > Aplicação em Angular para estudos, CI/CD Travis com Deploy gh-pages<br>
@@ -116,7 +115,7 @@ Angular Fire: `ng add @angular/fire@next` <br>
 | Lint Staged    | https://www.npmjs.com/package/lint-staged    | ![GitHub package.json dependency version (dev dep on branch)][lint-staged-img]    |
 | Prettier       | https://www.npmjs.com/package/prettier       | ![GitHub package.json dependency version (dev dep on branch)][prettier-img]       |
 | Lite Server    | https://www.npmjs.com/package/lite-server    | ![GitHub package.json dependency version (dev dep on branch)][lite-server-img]    |
-| Firebase       | https://www.npmjs.com/package/lite-server    | ![GitHub package.json dependency version (dev dep on branch)][firebase-img]       |
+| Firebase       | https://www.npmjs.com/package/firebase       | ![GitHub package.json dependency version (dev dep on branch)][firebase-img]       |
 | Firebase Tools | https://www.npmjs.com/package/firebase-tools | ![GitHub package.json dependency version (dev dep on branch)][firebase-tools-img] |
 
 <!-- Markdown link & images -->
