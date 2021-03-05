@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 
+import { AuthAngularFireModule } from './../../auth/auth-angular-fire.module';
+
 import { LeftBarModule } from './left-bar.module';
 
 import { LeftBarComponent } from './left-bar.component';
@@ -11,7 +13,7 @@ describe('LeftBarComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterTestingModule, LeftBarModule],
+      imports: [RouterTestingModule, LeftBarModule, AuthAngularFireModule],
       declarations: [LeftBarComponent],
     }).compileComponents();
   });

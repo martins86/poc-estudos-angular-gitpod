@@ -3,6 +3,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 
+import { AuthAngularFireModule } from './core/auth/auth-angular-fire.module';
+
 import { MatSidenavModule } from '@angular/material/sidenav';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -21,8 +23,9 @@ const sharedModules = [LoadingSpinnerModule];
 
 import { HomeModule } from './pages/home/home.module';
 import { LoginModule } from './pages/login/login.module';
+import { ProfileModule } from './pages/profile/profile.module';
 
-const pagesModules = [HomeModule, LoginModule];
+const pagesModules = [HomeModule, LoginModule, ProfileModule];
 
 @NgModule({
   declarations: [AppComponent],
@@ -30,6 +33,7 @@ const pagesModules = [HomeModule, LoginModule];
     BrowserAnimationsModule,
     BrowserModule,
     RouterModule,
+    AuthAngularFireModule,
     MatSidenavModule,
     ...coreModules,
     AppRoutingModule,

@@ -11,8 +11,6 @@ export class TopBarComponent {
   @Output()
   toggleLeftBarForMe: EventEmitter<string> = new EventEmitter();
 
-  authValid = false;
-
   constructor(protected iconRegistryService: RegistryIconsService) {
     this.registeringIcons();
   }

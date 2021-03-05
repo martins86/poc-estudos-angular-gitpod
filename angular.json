@@ -83,7 +83,7 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
-            "codeCoverageExclude": ["/**/*module*.ts"],
+            "codeCoverageExclude": ["/**/*module*.ts", "/**/*directive*.ts"],
             "assets": ["src/favicon.ico", "src/assets"],
             "styles": ["src/styles.scss"],
             "scripts": []
@@ -112,6 +112,10 @@
               "devServerTarget": "poc-estudos-angular-gitpod:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {}
         }
       }
     }

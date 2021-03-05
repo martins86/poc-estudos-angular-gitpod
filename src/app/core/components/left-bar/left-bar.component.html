@@ -37,29 +37,21 @@
         <div mat-line>Entrar</div>
       </mat-list-item>
       <mat-divider></mat-divider>
-
-      <ng-template *ngIf="authValid">
-        <mat-list-item
-          [routerLink]="['/profile']"
-          [routerLinkActiveOptions]="{ exact: true }"
-          routerLinkActive="active"
-          (click)="closeLeftBar()"
-        >
-          <mat-icon mat-list-icon svgIcon="manage_accounts"></mat-icon>
-          <div mat-line>Editar Perfil</div>
-        </mat-list-item>
-        <mat-divider></mat-divider>
-        <mat-list-item
-          [routerLink]="['/login']"
-          [routerLinkActiveOptions]="{ exact: true }"
-          routerLinkActive="active"
-          (click)="closeLeftBar()"
-        >
-          <mat-icon mat-list-icon svgIcon="logout"></mat-icon>
-          <div mat-line>Sair</div>
-        </mat-list-item>
-        <mat-divider></mat-divider>
-      </ng-template>
+      <mat-list-item
+        [routerLink]="['/profile']"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLinkActive="active"
+        (click)="closeLeftBar()"
+      >
+        <mat-icon mat-list-icon svgIcon="manage_accounts"></mat-icon>
+        <div mat-line>Editar Perfil</div>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item>
+        <mat-icon mat-list-icon svgIcon="logout"></mat-icon>
+        <div mat-line>Sair</div>
+      </mat-list-item>
+      <mat-divider></mat-divider>
     </div>
   </mat-list>
 </mat-nav-list>

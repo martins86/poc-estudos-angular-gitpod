@@ -13,6 +13,13 @@ const routes: Routes = [
       import('./pages/login/login.module').then((module) => module.LoginModule),
   },
   {
+    path: 'profile',
+    loadChildren: () =>
+      import('./pages/profile/profile.module').then(
+        (module) => module.ProfileModule
+      ),
+  },
+  {
     path: '',
     redirectTo: '',
     pathMatch: 'full',
