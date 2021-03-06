@@ -115,7 +115,6 @@ Angular Fire: `ng add @angular/fire@next` <br>
 | Lint Staged    | https://www.npmjs.com/package/lint-staged    | ![GitHub package.json dependency version (dev dep on branch)][lint-staged-img]    |
 | Prettier       | https://www.npmjs.com/package/prettier       | ![GitHub package.json dependency version (dev dep on branch)][prettier-img]       |
 | Lite Server    | https://www.npmjs.com/package/lite-server    | ![GitHub package.json dependency version (dev dep on branch)][lite-server-img]    |
-| Firebase       | https://www.npmjs.com/package/firebase       | ![GitHub package.json dependency version (dev dep on branch)][firebase-img]       |
 | Firebase Tools | https://www.npmjs.com/package/firebase-tools | ![GitHub package.json dependency version (dev dep on branch)][firebase-tools-img] |
 
 <!-- Markdown link & images -->
@@ -140,5 +139,4 @@ Angular Fire: `ng add @angular/fire@next` <br>
 [lint-staged-img]: https://img.shields.io/github/package-json/dependency-version/martins86/poc-estudos-angular-gitpod/dev/lint-staged
 [prettier-img]: https://img.shields.io/github/package-json/dependency-version/martins86/poc-estudos-angular-gitpod/dev/prettier
 [lite-server-img]: https://img.shields.io/github/package-json/dependency-version/martins86/poc-estudos-angular-gitpod/dev/lite-server
-[firebase-img]: https://img.shields.io/github/package-json/dependency-version/martins86/poc-estudos-angular-gitpod/dev/firebase
 [firebase-tools-img]: https://img.shields.io/github/package-json/dependency-version/martins86/poc-estudos-angular-gitpod/dev/firebase-tools
