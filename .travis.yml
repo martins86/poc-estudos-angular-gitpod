@@ -24,11 +24,11 @@ jobs:
     - env: EMBER_VERSION=dev
 
 install:
-  - npm cache clear --force
+  - npm cache clear
   - npm install
 
 script:
-  - npm run test
+  # - npm run test
   - ng build --prod --aot --deploy-url ./ --base-href ./
   - cd dist/poc-estudos-angular-gitpod
   - cp index.html 404.html
