@@ -24,7 +24,6 @@ jobs:
     - env: EMBER_VERSION=dev
 
 install:
-  - npm cache clear
   - npm install
 
 script:
