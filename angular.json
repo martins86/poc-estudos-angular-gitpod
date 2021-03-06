@@ -106,10 +106,6 @@
               "devServerTarget": "poc-estudos-angular-gitpod:serve:production"
             }
           }
-        },
-        "deploy": {
-          "builder": "@angular/fire:deploy",
-          "options": {}
         }
       }
     }
