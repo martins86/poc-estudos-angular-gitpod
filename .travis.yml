@@ -1,15 +1,13 @@
 dist: trusty
-sudo: required
-
+sudo: false
 language: node_js
 node_js:
   - "12.18.3"
+  - stable
 
 addons:
+  sauce_connect: true
   chrome: stable
-
-before_install:
-  - google-chrome-stable --disable-gpu --remote-debugging-port=9222 http://localhost &
 
 branches:
   only:
@@ -27,19 +25,15 @@ install:
   - npm install
 
 script:
-  # - npm run test
+  - npm run test
   - ng build --prod --aot --deploy-url ./ --base-href ./
   - cd dist/poc-estudos-angular-gitpod
   - cp index.html 404.html
 
-notifications:
-  email:
-    on_failure: change
-    on_success: change
-
-# before_install:
-#   - export DISPLAY=:99.0
-#   - sh -e /etc/init.d/xvfb start
+before_install:
+  - export CHROME_BIN=chromium-browser
+  - export DISPLAY=:99.0
+  - sh -e /etc/init.d/xvfb start
 
 deploy:
   provider: pages

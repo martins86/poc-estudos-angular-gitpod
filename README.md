@@ -85,8 +85,8 @@ Angular Fire: `ng add @angular/fire@next` <br>
 
 | Alias                  | Descrição                                                         | Comando                                                                    |
 | ---------------------- | ----------------------------------------------------------------- | -------------------------------------------------------------------------- |
-| npm run test           | Rodando testes unitários no CI/CD.                                | ng test --no-watch --no-progress --code-coverage --browsers ChromeHeadless |
-| npm run test-dev       | Rodando testes unitários em desenvolvimento.                      | ng test --code-coverage --progress                                         |
+| npm run test           | Rodando testes unitários no CI/CD.                                | ng test --no-watch --no-progress --code-coverage --browsers ChromeHeadlessNoSandbox |
+| npm run test-dev       | Rodando testes unitários em desenvolvimento.                      | ng test --code-coverage --progress --browsers Chrome                                         |
 | npm run lint           | Rodando ts lint (análise de código).                              | ng lint                                                                    |
 | npm run e2e            | Rodando testes end-to-end (e2e).                                  | ng e2e --port 4201                                                         |
 | npm run prettier-write | Checa, Organiza e Otimiza (formatado) o código.                   | npx prettier --write --ignore-unknown .                                    |
