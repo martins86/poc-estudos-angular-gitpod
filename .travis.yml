@@ -6,11 +6,6 @@ node_js:
 
 addons:
   chrome: stable
-  apt:
-    sources:
-      - google-chrome
-    packages:
-      - google-chrome-stable
 
 branches:
   only:
@@ -27,10 +22,14 @@ install:
   - npm install
 
 script:
-  - npm run test
+  - ng test --no-watch --no-progress --code-coverage --browsers ChromeHeadlessNoSandbox
   - ng build --prod --aot --deploy-url ./ --base-href ./
   - cd dist/poc-estudos-angular-gitpod
   - cp index.html 404.html
+
+cache:
+  directories:
+    - ./node_modules
 
 before_install:
   - npm install -g @angular/cli
