@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { AuthAngularFireModule } from './../../core/auth/auth-angular-fire.module';
+
 import { MatCardModule } from '@angular/material/card';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -25,6 +27,7 @@ import { LoginComponent } from './login.component';
   declarations: [LoginComponent],
   imports: [
     CommonModule,
+    AuthAngularFireModule,
     LoginRoutingModule,
     HttpClientModule,
     FormsModule,
