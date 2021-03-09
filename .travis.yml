@@ -14,12 +14,11 @@ addons:
 
 cache:
   yarn: true
-  npm: false
   directories:
     - node_modules
 
 install:
-  - npm install firebase @angular/fire --save
+  # - npm install firebase @angular/fire --save
   - npm install
 
 before_install:
