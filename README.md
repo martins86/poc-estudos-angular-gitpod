@@ -83,16 +83,16 @@ Angular Fire: `ng add @angular/fire@next` <br>
 
 # Outros comandos personalizados
 
-| Alias                  | Descrição                                                         | Comando                                                                    |
-| ---------------------- | ----------------------------------------------------------------- | -------------------------------------------------------------------------- |
+| Alias                  | Descrição                                                         | Comando                                                                             |
+| ---------------------- | ----------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
 | npm run test           | Rodando testes unitários no CI/CD.                                | ng test --no-watch --no-progress --code-coverage --browsers ChromeHeadlessNoSandbox |
-| npm run test-dev       | Rodando testes unitários em desenvolvimento.                      | ng test --code-coverage --progress --browsers Chrome                                         |
-| npm run lint           | Rodando ts lint (análise de código).                              | ng lint                                                                    |
-| npm run e2e            | Rodando testes end-to-end (e2e).                                  | ng e2e --port 4201                                                         |
-| npm run prettier-write | Checa, Organiza e Otimiza (formatado) o código.                   | npx prettier --write --ignore-unknown .                                    |
-| npm run prettier-check | Checa se o código esta formatado.                                 | npx prettier --check .                                                     |
-| npm run pre-commit     | Rodando ts lint, testes unitários e testes e2e.                   | npm run lint && npm run test && npm run e2e                                |
-| npm run start-prod     | Executa um build de prod e roda o resultado em um servidor local. | npm run build-local && lite-server                                         |
+| npm run test-dev       | Rodando testes unitários em desenvolvimento.                      | ng test --code-coverage --progress --browsers Chrome                                |
+| npm run lint           | Rodando ts lint (análise de código).                              | ng lint                                                                             |
+| npm run e2e            | Rodando testes end-to-end (e2e).                                  | ng e2e --port 4201                                                                  |
+| npm run prettier-write | Checa, Organiza e Otimiza (formatado) o código.                   | npx prettier --write --ignore-unknown .                                             |
+| npm run prettier-check | Checa se o código esta formatado.                                 | npx prettier --check .                                                              |
+| npm run pre-commit     | Rodando ts lint, testes unitários e testes e2e.                   | npm run lint && npm run test && npm run e2e                                         |
+| npm run start-prod     | Executa um build de prod e roda o resultado em um servidor local. | npm run build-local && lite-server                                                  |
 
 <br>
 
