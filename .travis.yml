@@ -18,7 +18,8 @@ cache:
     - node_modules
 
 install:
-  # - npm install firebase @angular/fire --save
+  - npm install firebase @angular/fire --save
+  - npm install firebase-tools -global
   - npm install
 
 before_install:
