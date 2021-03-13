@@ -18,3 +18,19 @@ input {
   font-size: 1em;
   padding-left: 0.4em;
 }
+
+ul li {
+  list-style: none;
+  border: 1px solid #000000;
+  background-color: #607d8b;
+  padding: 6px;
+  margin-bottom: 3px;
+  color: #ffffff;
+  width: 300px;
+  display: flex;
+  align-items: flex-end;
+}
+
+ul li mat-icon.mat-icon {
+  margin-right: 5px;
+}

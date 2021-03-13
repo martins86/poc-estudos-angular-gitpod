@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 
-import { RegistryIconsService } from 'src/app/shared/services/registry-icons/registry-icons.service';
+import { RegistryIconsService } from './../../../shared/services/registry-icons/registry-icons.service';
 
 @Component({
   selector: 'app-left-bar',

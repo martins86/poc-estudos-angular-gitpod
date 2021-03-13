@@ -3,7 +3,7 @@
 :host {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: calc(100vh);
 }
 
 mat-drawer {
@@ -22,4 +22,5 @@ mat-drawer-container {
 
 mat-drawer-content {
   padding: 20px;
+  height: calc(100vh - 164px);
 }
