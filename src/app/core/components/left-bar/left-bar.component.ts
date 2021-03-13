@@ -31,6 +31,7 @@ export class LeftBarComponent {
       'account_circle',
       'home',
       'login',
+      'personal_video',
       'manage_accounts',
       'logout',
     ];

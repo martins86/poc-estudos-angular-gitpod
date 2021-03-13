@@ -38,6 +38,16 @@
       </mat-list-item>
       <mat-divider></mat-divider>
       <mat-list-item
+        [routerLink]="['/poc-demo']"
+        [routerLinkActiveOptions]="{ exact: true }"
+        routerLinkActive="active"
+        (click)="closeLeftBar()"
+      >
+        <mat-icon mat-list-icon svgIcon="personal_video"></mat-icon>
+        <div mat-line>Poc Demo</div>
+      </mat-list-item>
+      <mat-divider></mat-divider>
+      <mat-list-item
         [routerLink]="['/profile']"
         [routerLinkActiveOptions]="{ exact: true }"
         routerLinkActive="active"

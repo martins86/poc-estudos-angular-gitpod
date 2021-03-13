@@ -10,20 +10,11 @@ module.exports = function (config) {
       require("karma-chrome-launcher"),
       require("karma-jasmine-html-reporter"),
       require("karma-coverage"),
-      // require("karma-coverage-istanbul-reporter"),
       require("@angular-devkit/build-angular/plugins/karma"),
     ],
     client: {
       clearContext: false, // leave Jasmine Spec Runner output visible in browser
     },
-    // coverageIstanbulReporter: {
-    //   dir: require("path").join(
-    //     __dirname,
-    //     "./coverage/poc-estudos-angular-gitpod"
-    //   ),
-    //   reports: ["html", "lcovonly", "text-summary"],
-    //   fixWebpackSourcePaths: true,
-    // },
     coverageReporter: {
       dir: "coverage",
       reporters: [
@@ -64,5 +55,6 @@ module.exports = function (config) {
     browserDisconnectTolerance: 8,
     browserNoActivityTimeout: 60000,
     browserDisconnectTimeout: 20000,
+    captureTimeout: 210000,
   });
 };

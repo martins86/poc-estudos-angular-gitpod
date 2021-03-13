@@ -1,0 +1,27 @@
+<p>Usando a Mascara de CNPJ!</p>
+
+<form [formGroup]="formCnpj" (ngSubmit)="onSubmit()">
+  <label for="cnpj">CNPJ MASK</label>
+  <input
+    type="text"
+    name="cnpj"
+    formControlName="cnpj"
+    appMaskInputCnpj
+    maxlength="17"
+    id="cnpj"
+    autocomplete="off"
+    spellcheck="false"
+  />
+  <br /><br />
+  <button class="button" type="submit" [disabled]="!formCnpj.valid">
+    Envia
+  </button>
+</form>
+
+<br /><br />
+<p>Usando o Pipe de Random Replace String!</p>
+<p>CNPJ: {{ formCnpj.value.cnpj }} (original)</p>
+<p>
+  CNPJ: {{ formCnpj.value.cnpj | replaceRandomString: "*" }} (random * replace)
+</p>
+<p>CNPJ Status: {{ formCnpj.status }}</p>

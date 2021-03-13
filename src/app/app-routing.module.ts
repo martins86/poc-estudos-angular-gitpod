@@ -20,7 +20,14 @@ const routes: Routes = [
       ),
   },
   {
-    path: '',
+    path: 'poc-demo',
+    loadChildren: () =>
+      import('./pages/poc-demo/poc-demo.module').then(
+        (module) => module.PocDemoModule
+      ),
+  },
+  {
+    path: '**',
     redirectTo: '',
     pathMatch: 'full',
   },
