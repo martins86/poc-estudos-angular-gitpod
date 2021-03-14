@@ -22,7 +22,7 @@ export class PocDemoComponent implements OnInit {
       idade: 60,
       cidade: '',
       telefone: '19 0000-0000',
-      saldo: '',
+      saldo: 158.0,
     },
   ];
 
@@ -32,7 +32,7 @@ export class PocDemoComponent implements OnInit {
       idade: '60',
       cidade: 'Uma Cidade Bem Longe 01',
       telefone: '',
-      saldo: 'R$ 17,00',
+      saldo: 'R$ 185.567,09',
     },
   ];
 

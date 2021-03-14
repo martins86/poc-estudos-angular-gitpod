@@ -13,6 +13,10 @@ import localePt from '@angular/common/locales/pt';
 registerLocaleData(localePt, 'pt');
 
 import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatDividerModule } from '@angular/material/divider';
+
+const materialModules = [MatIconModule, MatDividerModule, MatButtonModule];
 
 import { MaskInputCnpjDirective } from './../../shared/directives/mask-input-cnpj/mask-input-cnpj.directive';
 
@@ -30,7 +34,7 @@ import { PocDemoComponent } from './poc-demo.component';
     HttpClientModule,
     PocDemoRoutingModule,
     ReactiveFormsModule,
-    MatIconModule,
+    ...materialModules,
   ],
   exports: [PocDemoComponent],
   providers: [

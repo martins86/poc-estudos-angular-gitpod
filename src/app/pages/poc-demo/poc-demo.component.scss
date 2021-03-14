@@ -5,6 +5,10 @@
   color: #000000;
 }
 
+section {
+  display: table;
+}
+
 label {
   display: block;
   width: 6em;
@@ -17,6 +21,17 @@ input {
   height: 2em;
   font-size: 1em;
   padding-left: 0.4em;
+}
+
+.mat-raised-button.mat-primary.mat-button-disabled,
+button:disabled {
+  background-color: #7b1fa2b0;
+  cursor: no-drop;
+}
+
+button,
+ul h1 {
+  margin: 12px 0;
 }
 
 ul li {
