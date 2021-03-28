@@ -1,4 +1,5 @@
 <section>
+  <h2>Máscara de input para CNPJ</h2>
   <div>
     <form [formGroup]="formCnpj" (ngSubmit)="onSubmit()">
       <label for="cnpj"
@@ -25,76 +26,8 @@
       </button>
     </form>
   </div>
-</section>
-
-<section>
   <div>
-    <p>
-      (original)<br />
-      CNPJ: {{ formCnpj.value.cnpj }}
-    </p>
-    <p>
-      (random replace * ignore . / -)<br />
-      CNPJ: {{ formCnpj.value.cnpj | replaceRandomString: "*":[".", "/", "-"] }}
-    </p>
+    <p>CNPJ Digitado: {{ formCnpj.value.cnpj }}</p>
     <p>CNPJ Status: {{ formCnpj.status }}</p>
-  </div>
-</section>
-
-<section>
-  <div>
-    <ul>
-      <ng-container *ngFor="let data of pessoa">
-        <h1>Pessoa:</h1>
-        <li *ngIf="data.nome">
-          <mat-icon mat-list-icon svgIcon="home"></mat-icon>
-          Nome: {{ data.nome }}
-        </li>
-        <li *ngIf="data.nome">
-          <mat-icon mat-list-icon svgIcon="home"></mat-icon>
-          Idade: {{ data.idade }}
-        </li>
-        <li *ngIf="data.cidade">
-          <mat-icon mat-list-icon svgIcon="home"></mat-icon>
-          Cidade: {{ data.cidade }}
-        </li>
-        <li *ngIf="data.telefone">
-          <mat-icon mat-list-icon svgIcon="home"></mat-icon>
-          Telefone: {{ data.telefone }}
-        </li>
-        <li *ngIf="data.saldo">
-          <mat-icon mat-list-icon svgIcon="home"></mat-icon>
-          Saldo: {{ data.saldo | currency: "BRL" }}
-        </li>
-      </ng-container>
-
-      <ng-container *ngFor="let dataSecure of pessoaSecure">
-        <h1>Pessoa:</h1>
-        <li *ngIf="dataSecure.nome">
-          <mat-icon mat-list-icon svgIcon="home"></mat-icon>
-          Nome: {{ dataSecure.nome | replaceRandomString: "x":[" "] }}
-        </li>
-        <li *ngIf="dataSecure.nome">
-          <mat-icon mat-list-icon svgIcon="home"></mat-icon>
-          Idade: {{ dataSecure.idade | replaceRandomString: "*":[" "] }}
-        </li>
-        <li *ngIf="dataSecure.cidade">
-          <mat-icon mat-list-icon svgIcon="home"></mat-icon>
-          Cidade: {{ dataSecure.cidade | replaceRandomString: "*":[" "] }}
-        </li>
-        <li *ngIf="dataSecure.telefone">
-          <mat-icon mat-list-icon svgIcon="home"></mat-icon>
-          Telefone: {{ dataSecure.telefone | replaceRandomString: "*":[" "] }}
-        </li>
-        <li *ngIf="dataSecure.saldo">
-          <mat-icon mat-list-icon svgIcon="home"></mat-icon>
-          Saldo:
-          {{
-            dataSecure.saldo
-              | replaceRandomString: "*":["R", "$", ",", ".", " "]
-          }}
-        </li>
-      </ng-container>
-    </ul>
   </div>
 </section>

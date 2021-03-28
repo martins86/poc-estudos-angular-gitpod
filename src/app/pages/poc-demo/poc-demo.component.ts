@@ -9,33 +9,6 @@ import { RegistryIconsService } from './../../shared/services/registry-icons/reg
   styleUrls: ['./poc-demo.component.scss'],
 })
 export class PocDemoComponent implements OnInit {
-  pessoa: any[] = [
-    {
-      nome: 'Fulano',
-      idade: 35,
-      cidade: 'Campinas',
-      telefone: '',
-      saldo: 17.0,
-    },
-    {
-      nome: 'Ciclano',
-      idade: 60,
-      cidade: '',
-      telefone: '19 0000-0000',
-      saldo: 158.0,
-    },
-  ];
-
-  pessoaSecure: any[] = [
-    {
-      nome: 'Ciclano Da Silva Sauro',
-      idade: '60',
-      cidade: 'Uma Cidade Bem Longe 01',
-      telefone: '',
-      saldo: 'R$ 185.567,09',
-    },
-  ];
-
   formCnpj = this.fb.group({
     cnpj: new FormControl('', [
       Validators.required,
