@@ -1,16 +1,18 @@
 import { Pipe, PipeTransform } from '@angular/core';
 
-/*
- * ex:
- * module: declarations, exports
- * component: stringText = '24.575.275/275-27';
- * html: <p> {{ stringText | replaceRandomString: "*" : ['.', '/', '-'] }}</p>
- * result: '2*.5**.2*5/*7*-**'
- */
-
 @Pipe({
   name: 'replaceRandomString',
 })
+/**
+ * Pipe replaces a random character
+ * in a string and ignores some other characters
+ *
+ * @returns `2*.5**.2*5/*7*-**`.
+ *
+ * @example
+ *
+ * `<p>{{ stringText | replaceRandomString: "*" : ['.', '/', '-'] }}</p>`
+ */
 export class ReplaceRandomStringPipe implements PipeTransform {
   transform(value: string, replaceValue: string, ignoreChars?: string[]): any {
     return value

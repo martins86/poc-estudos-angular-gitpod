@@ -1,15 +1,18 @@
 import { Directive, HostListener } from '@angular/core';
 import { NgControl } from '@angular/forms';
 
-/*
- * ex:
- * module: declarations, exports
- * html: <input type="text" formControlName="cnpj" appMaskInputCnpj maxlength="17" />
- * result: '00.000.000/0000-00'
- */
 @Directive({
   selector: '[formControlName][appMaskInputCnpj]',
 })
+/**
+ * Mask to format cnpj input
+ *
+ * @returns a cnp formatted as `00.000.000/0000-00`.
+ *
+ * @example
+ *
+ * `<input type="text" formControlName="cnpj" appMaskInputCnpj maxlength="17" />`
+ */
 export class MaskInputCnpjDirective {
   constructor(public ngControl: NgControl) {}
 
