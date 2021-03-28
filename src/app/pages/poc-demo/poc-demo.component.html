@@ -1,33 +1,39 @@
-<section>
-  <h2>Máscara de input para CNPJ</h2>
-  <div>
-    <form [formGroup]="formCnpj" (ngSubmit)="onSubmit()">
-      <label for="cnpj"
-        >CNPJ:
-        <input
-          type="text"
-          name="cnpj"
-          formControlName="cnpj"
-          appMaskInputCnpj
-          maxlength="17"
-          id="cnpj"
-          autocomplete="off"
-          spellcheck="false"
-        />
-      </label>
+<div class="container">
+  <div class="row">
+    <div class="col-4">
+      <section>
+        <h2>Máscara de input para CNPJ</h2>
+        <div>
+          <form [formGroup]="formCnpj" (ngSubmit)="onSubmit()">
+            <label for="cnpj"
+              >CNPJ:
+              <input
+                type="text"
+                name="cnpj"
+                formControlName="cnpj"
+                appMaskInputCnpj
+                maxlength="17"
+                id="cnpj"
+                autocomplete="off"
+                spellcheck="false"
+              />
+            </label>
 
-      <button
-        mat-raised-button
-        color="primary"
-        type="submit"
-        [disabled]="!formCnpj.valid"
-      >
-        Enviar
-      </button>
-    </form>
+            <button
+              mat-raised-button
+              color="primary"
+              type="submit"
+              [disabled]="!formCnpj.valid"
+            >
+              Enviar
+            </button>
+          </form>
+        </div>
+        <div>
+          <p>CNPJ Digitado: {{ formCnpj.value.cnpj }}</p>
+          <p>CNPJ Status: {{ formCnpj.status }}</p>
+        </div>
+      </section>
+    </div>
   </div>
-  <div>
-    <p>CNPJ Digitado: {{ formCnpj.value.cnpj }}</p>
-    <p>CNPJ Status: {{ formCnpj.status }}</p>
-  </div>
-</section>
+</div>
