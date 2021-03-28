@@ -24,36 +24,41 @@ Instalando todos os pacotes de package.json :<br>
 `npm install`
 
 Prettier - Code Quality - [Prettier](https://prettier.io/) :<br>
-Pacote: `npm install prettier --save-dev --save-exact` <br>
+Pacote Dev: `npm install prettier --save-dev --save-exact` <br>
 Otimiza: `npx prettier --write --ignore-unknown .` <br>
 Checa/Valida: `npx prettier --check .` <br>
 
 Husky - CI - [Husky](https://typicode.github.io/husky/#/) :<br>
-Pacote: `npm install husky@next --save-dev` <br>
+Pacote Dev: `npm install husky@next --save-dev` <br>
 Git Hooks: `husky install` <br>
 Pre Commit: `husky add .husky/pre-commit "npm run pre-commit"` <br>
 
 Lint Staged - CI - [lint-staged](https://github.com/okonet/lint-staged#readme) :<br>
-Pacote: `npm install lint-staged --save-dev` <br>
+Pacote Dev: `npm install lint-staged --save-dev` <br>
 Config: `npx mrm lint-staged` <br>
 
 <br>
 
 Angular Material / CDK - [Angular Material](https://material.angular.io/) :<br>
-`npm install @angular/material @angular/cdk --save`
+Pacote: `npm install @angular/material @angular/cdk --save`
 
 <br>
 
 Lite Server - [Lite Server](https://github.com/johnpapa/lite-server) :<br>
-Global: `npm install -global lite-server@latest` <br>
-Dev: `npm install lite-server --save-dev` <br>
+Pacote Global: `npm install -global lite-server@latest` <br>
+Pacote Dev: `npm install lite-server --save-dev` <br>
 
 <br>
 
 Firebase - [Firebase](https://firebase.google.com/) :<br>
-Firebase app: `npm install firebase --save` <br>
-Firebase Tools: `npm install -global firebase-tools` <br>
+Pacote: `npm install firebase --save` <br>
+Pacote Global: `npm install -global firebase-tools` <br>
 Angular Fire: `ng add @angular/fire@next` <br>
+
+<br>
+
+Bootstrap - [Bootstrap](https://getbootstrap.com/) :<br>
+Pacote: `npm install bootstrap@next` <br>
 
 <br>
 
@@ -116,6 +121,7 @@ Angular Fire: `ng add @angular/fire@next` <br>
 | Prettier       | https://www.npmjs.com/package/prettier       | ![GitHub package.json dependency version (dev dep on branch)][prettier-img]       |
 | Lite Server    | https://www.npmjs.com/package/lite-server    | ![GitHub package.json dependency version (dev dep on branch)][lite-server-img]    |
 | Firebase Tools | https://www.npmjs.com/package/firebase-tools | ![GitHub package.json dependency version (dev dep on branch)][firebase-tools-img] |
+| Bootstrap      | https://www.npmjs.com/package/bootstrap      | ![GitHub package.json dependency version (dev dep on branch)][bootstrap-img]      |
 
 <!-- Markdown link & images -->
 
@@ -140,3 +146,4 @@ Angular Fire: `ng add @angular/fire@next` <br>
 [prettier-img]: https://img.shields.io/github/package-json/dependency-version/martins86/poc-estudos-angular-gitpod/dev/prettier
 [lite-server-img]: https://img.shields.io/github/package-json/dependency-version/martins86/poc-estudos-angular-gitpod/dev/lite-server
 [firebase-tools-img]: https://img.shields.io/github/package-json/dependency-version/martins86/poc-estudos-angular-gitpod/dev/firebase-tools
+[bootstrap-img]: https://img.shields.io/github/package-json/dependency-version/martins86/poc-estudos-angular-gitpod/dev/bootstrap
