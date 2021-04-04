@@ -66,7 +66,7 @@ Pacote: `npm install bootstrap@next` <br>
 
 ### Módulo com rotas - (alterar pages/home por tipo/nome do novo módulo) :<br>
 
-`ng generate module pages/home --routing`<br>
+`ng generate module pages/home --module app --routing`<br>
 
 > home.module.ts<br>
 > home-routing.module.ts
